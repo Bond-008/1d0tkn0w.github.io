@@ -7,7 +7,6 @@ import pyautogui as gui
 keyboardy = Controller()
 gui.hotkey("alt", "tab")
 time.sleep(1)
-wasblack = False
 gui.press("space")
 num = 0
 rand = 0.3
