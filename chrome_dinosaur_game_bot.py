@@ -13,8 +13,8 @@ num = 0
 rand = 0.3
 ok = time.time()
 def timing(seconds, delay):
+    global rand
     if start - ok > seconds:
-        global rand
         rand = delay
 def get_screenshot(monitor_num):
     sct_img = sct.grab(monitor_num)
