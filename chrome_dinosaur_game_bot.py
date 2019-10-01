@@ -17,8 +17,8 @@ def timing(seconds, delay):
         global rand
         rand = delay
 def get_screenshot(monitor_num):
-    sct_img = sct.grab(monitor_num)
     global img
+    sct_img = sct.grab(monitor_num)
     img = Image.frombytes("RGB", sct_img.size, sct_img.bgra, "raw", "BGRX")
 def pixel_colour(x1, x2, y):
     r, g, b = img.getpixel((x1 - x2, y))
