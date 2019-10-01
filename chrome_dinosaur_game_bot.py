@@ -11,9 +11,9 @@ wasblack = False
 gui.press("space")
 num = 0
 rand = 0.3
-ok = time.time()
+start_time = time.time()
 def timing(seconds, delay):
-    if start - ok > seconds:
+    if start - start_time > seconds:
         global rand
         rand = delay
 def get_screenshot(monitor_num):
